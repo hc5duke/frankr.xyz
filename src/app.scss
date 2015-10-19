@@ -1,2 +1,25 @@
-body {
+@import 'base-min';
+@import 'reset-fonts-grids';
+
+button {
+  -moz-border-radius: 5px;
+  background: white;
+  border: 3px solid black;
+  display: inline-block;
+  cursor: pointer;
+  padding: 3px 5px;
+  margin: 5px;
+}
+
+html {
+  background: url(https://farm6.staticflickr.com/5774/20839382782_a459ad42bd_h.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 200%;
+  color: white;
 }

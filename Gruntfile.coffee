@@ -45,7 +45,7 @@ module.exports = (grunt) ->
         options:
           style: 'compact'
         files: [
-          'dist/app.css': ['src/app.scss', 'bower_components/bootstrap-sass/lib/bootstrap.scss']
+          'dist/app.css': ['src/app.scss']
         ]
     watch:
       coffee:
@@ -56,10 +56,10 @@ module.exports = (grunt) ->
         tasks: ['haml']
       sass:
         files: ['src/*.scss', 'Gruntfile.coffee']
-        tasks: ['sass']
+        tasks: ['sass:dist']
       static:
         files: ['public/*', 'Gruntfile.coffee']
-        tasks: ['copy:static']
+        tasks: ['copy:dist']
 
   # These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-coffee')
