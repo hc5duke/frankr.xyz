@@ -2,17 +2,21 @@
 
 http://frankr.xyz
 
-## Usage
+## Setup
 
 ```bash
 npm install
 npm install -g grunt-cli http-server
+echo "{}" > .grunt-aws.json
+```
+
+## Run
+```
 grunt & http-server dist & open http://localhost:8080
 ```
 
 ## Deploy
 
 ```bash
-# create .grunt-aws.json
 grunt s3
 ```
