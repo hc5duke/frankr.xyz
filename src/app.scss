@@ -7,8 +7,8 @@ button {
   border: 3px solid black;
   display: inline-block;
   cursor: pointer;
-  padding: 3px 5px;
-  margin: 5px;
+  padding: 5px 12px;
+  margin: 7px;
 }
 
 html {
@@ -21,5 +21,10 @@ html {
 
 h1 {
   font-size: 200%;
+  color: white;
+}
+
+h3 {
+  font-size: 125%;
   color: white;
 }
